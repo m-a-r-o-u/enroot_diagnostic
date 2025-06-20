@@ -14,22 +14,13 @@
 
 # --- Partition, Reservation, and Job Name Block (EDIT FOR YOUR USE) ---
 #
-# === OPTION 1: Default Partition (lrz-v100x2) ===
-#
 # #SBATCH -p lrz-v100x2
 # #SBATCH --job-name=diag_lrz-v100x2
 
 #SBATCH -p lrz-hgx-a100-80x4
 #SBATCH --job-name=diag_lrz-hgx-a100-80x4
 
-#
-# === OPTION 2: Special Reservation (lrz-hgx-h100-94x4) ===
-# To use the special 'test_inference' reservation:
-# 1. Comment out the two lines in OPTION 1 above.
-# 2. Uncomment the three lines below.
-#
 # #SBATCH -p lrz-hgx-h100-94x4
-# #SBATCH --reservation=test_inference
 # #SBATCH --job-name=diag_lrz-hgx-h100-94x4
 #
 # --- END Partition and Reservation Block ---
